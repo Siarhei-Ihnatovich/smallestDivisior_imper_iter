@@ -1,13 +1,14 @@
-const smallestDivisor = (num) => {
+const smallestDivisor = (n) => {
 let counter = 1;
 let result = 1;
 
-  if (num < 1) {
+  if (n < 1) {
     return NaN
   }
   
-  while (num % counter !== 0) {
-    result = num / counter;
+  
+  while (n % counter > 0) {
+   result = n / counter;
     counter = counter + 1;
     
     
@@ -18,4 +19,4 @@ let result = 1;
   return result;
 }
 
-console.log(smallestDivisor(15));
+console.log(smallestDivisor(4));
