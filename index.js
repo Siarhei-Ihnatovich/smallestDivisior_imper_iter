@@ -7,13 +7,14 @@ let result = 1;
   }
   
   
-  while (n % counter > 0) {
-   result = n / counter;
-    counter = counter + 1;
+  while (n % counter != 0) {
+    result = result + counter;
     
+    counter = counter + 1;
     
     console.log(result);
     console.log(counter);
+   
   }
   
   return result;
