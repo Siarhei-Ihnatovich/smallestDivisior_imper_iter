@@ -4,13 +4,17 @@ const smallestDivisor = (n) => {
   if (n < 1) {
     return NaN
   }
+  
+  if (n === 1) {
+    return n
+  }
 
   while (n % counter !== 0) {
     counter = counter + 1;
-    
   }
+  
 return counter;
   
 }
 
-console.log(smallestDivisor(17));
+console.log(smallestDivisor(15));
